@@ -20,4 +20,9 @@ st.text("This is a text")
 #Select Box
 st.selectbox("Your Favorite Chai:",["Masala Chai","Kesar Chai", "Lemon Chai"])
 st.success("Your chai has brewed!!")
+
 #line chart
+chart_data=pd.DataFrame(
+    np.random.randn(20,3),columns=['a','b','c']
+)
+st.line_chart(chart_data)
